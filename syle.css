@@ -1,0 +1,30 @@
+span.albumName:before{
+    content: open-quote;
+}
+
+span.albumName:after{
+    content: close-quote;
+}
+
+span.artistName {
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    line-height: 1;
+  }
+  
+  h1 {
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 0.5;
+  }
+  

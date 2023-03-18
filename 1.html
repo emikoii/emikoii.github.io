@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML page</title>
+    <script src="jquery.js"></script>
+  </head>
+  <body>
+    <h1>添加专辑</h1>
+    <form id="newAlbumInformation">
+      <div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+        <label for="kurokami">黒髪</label>
+        <input type="radio" name="kurokami" id="kurokami" required></div>
+      <div>
+        <label for="album-name">专辑名</label>
+        <input type="text" name="album-name" id="album-name" required></div>
+      <div>
+        <label for="artistName">音乐家/乐队名</label>
+        <input type="text" name="artistName" id="artistName" required></div>
+      <div>
+        <label for="age">年代</label>
+        <select id="age" name="age">
+          <option value="null">无</option>
+          <option value="2020">2020</option>
+          <option value="2010">2010</option>
+          <option value="2000">2000</option>
+          <option value="1990">1990</option>
+          <option value="1980">1980</option>
+          <option value="1970">1970</option>
+          <option value="lt1970">&lt;1970</option></select></div>
+      <div>
+        <label for="gender">歌手性别</label>
+        <select id="age" name="age">
+          <option value="null">无</option>
+          <option value="2020">男性</option>
+          <option value="2010">女性</option>
+          <option value="lt1970">器乐</option></select></div>
+      <div>
+        <label for="genre">*流派</label>
+        <input type="genre" name="genre" id="genre"></div>
+      <div>
+        <label for="style">*风格</label>
+        <input type="style" name="style" id="style"></div>
+      <div>
+        <button type="submit">添加</button> </div> </form>
+    <div id="newAlbum"></div>
+
+    <script>
+      const form = document.querySelector('#newAlbumInformation');
+      const linkContainer = document.querySelector('#newAlbumDisplay');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const newAlbumLink = document.querySelector('#album-link').value;
+        const newAlbumName = document.querySelector('#album-name').value;
+
+        const newAlbum = document.createElement('a');
+        newAlbum.textContent = newAlbumName;
+        newAlbum.href = linkUrl;
+
+        linkContainer.body.appendChild(newAlbum);
+
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
